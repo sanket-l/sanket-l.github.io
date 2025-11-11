@@ -1,6 +1,4 @@
-$(document).ready(function () {
-
-    'use strict';
+(function () {
     const body = document.body;
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
@@ -97,4 +95,4 @@ $(document).ready(function () {
     document.addEventListener('keyup', (e) => {
         if (e.key === 'Tab') document.body.classList.add('user-is-tabbing');
     });
-});
+})();

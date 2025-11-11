@@ -46,8 +46,10 @@
 
                 <ul class="sidebar-meta">
                     <li><i class="fa-solid fa-envelope"></i><span>slandge@uci.edu</span></li>
-                    <li><i class="fa-solid fa-location-dot"></i><span>Irvine, CA · Open to remote</span></li>
-                    <li><i class="fa-solid fa-clock"></i><span>Internships & Entry roles</span></li>
+                    <li><i class="fa-solid fa-location-dot"></i><span>Irvine, CA | Open to <br /> Relocation /
+                            Remote</span></li>
+                    <li><i class="fa-solid fa-clock"></i><span>Summer Internships <br /> (2026) & Entry roles</span>
+                    </li>
                 </ul>
             </div>
 
@@ -141,16 +143,29 @@
             <div class="container two-col">
                 <div class="main-col">
                     <h3>About</h3>
-                    <p>
-                        I'm a Master of Computer Science student at UC Irvine with ~3.5 years of experience in DevOps
-                        and platform engineering.
-                        I specialize in infrastructure automation, CI/CD optimization, observability, and backend
-                        development. I enjoy solving reliability and performance challenges using pragmatic, secure, and
-                        scalable approaches.
+                    <p><strong>TL;DR:</strong><br /> Ephermeral learner. Software Engineer who loves building reliable
+                        systems,
+                        automating workflows, and turning operational chaos into scalable, maintainable platforms in a
+                        collaborative, goal-oriented, Agile way.
                     </p>
                     <p>
-                        Core strengths: cloud-native architecture, Kubernetes, Terraform, Prometheus/Grafana, Python/Go,
-                        and building operational tools that help teams move faster.
+                        My journey into tech started during my undergrad days,
+                        when I was fascinated by how distributed systems and automation could power entire businesses.
+                        That curiosity led me from tinkering with small web apps to designing production-ready
+                        infrastructure and CI/CD pipelines used by engineering teams.
+                    </p>
+                    <p>
+                        Over time, I’ve worked across backend engineering and DevOps, building APIs, containerized
+                        services, and automated deployment pipelines with tools like Kubernetes, Terraform, Ansible and
+                        Prometheus.
+                        I’m driven by a belief that good infrastructure is invisible, fast, and reliable-and that
+                        automation should serve both scalability and simplicity.
+                    </p>
+                    <p>
+                        Beyond code, I enjoy contributing to the tech community by volunteering at hackathons,
+                        mentoring peers, and attending developer conferences. These experiences keep me inspired
+                        and grounded, reminding me that technology is ultimately about collaboration, learning,
+                        and creating lasting impact.
                     </p>
                 </div>
 
@@ -186,19 +201,22 @@
                 <div class="skills-grid">
                     <div class="skill-card">
                         <h4>Languages</h4>
-                        <p>C++, Python, Go, JavaScript, SQL</p>
+                        <p>C/C++, Python, Go, JavaScript, SQL, Bash/Shell</p>
                     </div>
                     <div class="skill-card">
                         <h4>Cloud / Infra</h4>
-                        <p>AWS (EKS, EC2, S3, Lambda), Docker, Kubernetes</p>
+                        <p>AWS, Azure, GCP, On-prem, Openstack, Docker, Kubernetes, Falco, Trivy, OPA, Auth0, Istio,
+                            Linkerd, Envoy proxy</p>
                     </div>
                     <div class="skill-card">
-                        <h4>CI / CD</h4>
-                        <p>TeamCity, GitHub Actions, Terraform, Ansible</p>
+                        <h4>CI / CD & Monitoring</h4>
+                        <p>TeamCity, GitHub Actions, Bazel, Terraform, Crossplane, Ansible, ArgoCD, Prometheus, Thanos,
+                            OpenTelemetry, Grafana, Loki, ELK </p>
                     </div>
                     <div class="skill-card">
-                        <h4>Monitoring</h4>
-                        <p>Prometheus, Grafana, ELK, Kafka</p>
+                        <h4>Tools & Frameworks</h4>
+                        <p>Django, Flask, Rest API, gRPC, Gin, Kubebuilder, React.js, Redux, Node.js, Express.js, Apache
+                            Spark, Kafka</p>
                     </div>
                 </div>
             </div>
@@ -209,28 +227,90 @@
                 <h3>Experience</h3>
                 <div class="timeline">
                     <article class="timeline-item">
-                        <h4>Platform9 Systems — DevOps Engineer</h4>
+                        <h4>Platform9 Systems (India) — DevOps Engineer</h4>
                         <p class="muted">Jul 2022 – Sep 2025</p>
                         <ul>
-                            <li>Optimized TeamCity CI/CD pipelines; reduced build times by 20%.</li>
-                            <li>Automated infrastructure with Terraform & Ansible, enabling safe rollbacks.</li>
-                            <li>Built Prometheus + Grafana dashboards for production monitoring.</li>
+                            <li>Led on-call production operations one week each month, ensuring 99.99%
+                                uptime across multi-cloud environments by responding to critical paging
+                                alerts and mitigating high-impact incidents within SLA targets.</li>
+                            <li>Upgraded the production Aurora MySQL database cluster from v5.7 → v8.0
+                                with zero downtime, orchestrating phased failovers and replica validation to maintain
+                                uninterrupted customer workloads.</li>
+                            <li>Developed an automated Packer-based image pipeline to generate
+                                preconfigured, secure OS images across AWS, Azure and Openstack on-prem with
+                                multi-architecture support, reducing environment provisioning time by ~35%.
+                            </li>
+                            <li>Implemented a stale server/cluster detection script for test environments that
+                                identified and decommissioned unused EC2 instances, cutting non-production cloud costs
+                                by ~25% monthly.</li>
+                            <li>Deployed and maintained an on-premises Kubernetes cluster supporting
+                                multiple product teams, enabling faster deployment cycles and consistent infrastructure
+                                parity with cloud environments.</li>
+                            <li>Optimized CI/CD pipelines in TeamCity, reducing processing time by 20% and improving
+                                deployment efficiency,
+                                leveraging advanced build configuration and JFrog artifactory plugin to store manifests
+                            <li>Automated infrastructure provisioning and configuration with Terraform and Ansible to
+                                enable rollback and recovery</li>
+                            <li>Executed migration of OpenStack infrastructure from on-prem to Rackspace, increasing
+                                system reliability/scalability</li>
+                            <li>Architected Grafana dashboards with Prometheus for real-time insights into
+                                infrastructure health and performance</li>
+                            <li>Implemented secure data-sharing via GPG encryption and annual public key rotation with
+                                an internal CLI tool,
+                                ensuring safe client support interactions over public channels and reducing data breach
+                                risks to near zero</li>
+                            <li>Mitigated security vulnerabilities in CentOS 7 servers with extended life support by
+                                patching 40 CVEs</li>
                         </ul>
                     </article>
 
                     <article class="timeline-item">
-                        <h4>TAP.co (Intern) — Full Stack</h4>
+                        <h4>TAP.co (Hong Kong, Remote) — Full Stack Devloper Intern</h4>
                         <p class="muted">Apr 2021 – Jul 2021</p>
                         <ul>
-                            <li>Implemented JWT authentication and PayPal integration for payments.</li>
+                            <li>Designed and developed aesthetic, responsive web interfaces using
+                                React.js, improving page engagement time through better layout composition and
+                                performance optimization</li>
+                            <li>Integrated frontend components with RESTful APIs for user
+                                authentication, payment processing, and dynamic data rendering, ensuring seamless
+                                communication between client and backend services</li>
+                            <li>Collaborated closely with backend engineers to define API structures and data
+                                flow, reducing integration issues during development and aligning the
+                                schema with business logic</li>
+                            <li>Authored a Makefile-based automation system to streamline build, test,
+                                and deployment processes for local testing environments, cutting developer setup time
+                            </li>
+                            <li>Implemented and maintained Git branching workflows (feature, release,
+                                staging, and production), minimizing merge conflicts and ensuring stable code releases
+                                across environments</li>
+                            <li>Enhanced the application’s usability by iterating on UI/UX feedback
+                                with designers and stakeholders, contributing to higher user satisfaction during
+                                internal demos</li>
+                            <li>Token-Based Authentication using JWT to secure user access and enhance web application
+                                security</li>
+                            <li>Integrated PayPal payment gateway into the registration system for streamlined and
+                                secure online payments</li>
                         </ul>
                     </article>
 
                     <article class="timeline-item">
-                        <h4>Hypersegment Automation — Backend Dev</h4>
+                        <h4>Hypersegment Automation (India) — Software Developer Intern</h4>
                         <p class="muted">Apr 2020 – Nov 2020</p>
                         <ul>
-                            <li>Developed backend services with Django, Celery & Redis for async tasks.</li>
+                            <li>Developed and maintained backend services using the Django framework, enabling faster
+                                feature delivery and consistent API behavior across modules</li>
+                            <li>Integrated PostgreSQL with Django ORM to design efficient data models and optimize query
+                                performance, improving backend data handling speed</li>
+                            <li>Implemented Celery-based asynchronous task processing to fetch and cache real-time stock
+                                data from external APIs, improving system responsiveness and scalability during
+                                high-load conditions</li>
+                            <li>Developed a Trading Strategy Planner with Python Statsmodels to enable traders to
+                                formulate strategies. Integrated it with a Paper Trading Module via API to simulate
+                                strategies in a real-time environment,
+                                boosting decision-making</li>
+                            <li>
+                                Constructed robust unit tests with PyTest, improving code quality and reliability by
+                                increasing code coverage to 92%</li>
                         </ul>
                     </article>
                 </div>
@@ -244,22 +324,25 @@
                     <div class="project-card">
                         <h4>Container Health Monitoring</h4>
                         <p>Built a scalable monitoring pipeline using Prometheus, Grafana, Kafka & ELK to monitor
-                            container health and alert on anomalies.</p>
+                            container health and alert on anomalies</p>
                         <p class="meta small"><strong>Stack:</strong> TeamCity, Prometheus, Kafka, ELK</p>
                     </div>
 
                     <div class="project-card">
                         <h4>LIGHT IT UP! — Zigbee Street Lighting</h4>
                         <p>Implemented a Zigbee mesh with Raspberry Pi controllers and a React dashboard for automated
-                            street-light control and scheduling.</p>
-                        <p class="meta small"><strong>Stack:</strong> React, Django, Apache Kafka, Raspberry Pi</p>
+                            street-light control and scheduling</p>
+                        <p class="meta small"><strong>Stack:</strong> React, Django, Astral, Xbee, Nginx, Gunicorn,
+                            Apache Kafka, Raspberry Pi</p>
                     </div>
 
                     <div class="project-card">
-                        <h4>CI/CD Automation Toolkit</h4>
-                        <p>Collection of IaC templates and scripts to automate deployments, improve rollback safety, and
-                            enforce secure defaults.</p>
-                        <p class="meta small"><strong>Stack:</strong> Terraform, Ansible, Shell, TeamCity</p>
+                        <h4>CTD-NCC — Competitive Coding Platform</h4>
+                        <p>Developed a full-stack platform for conducting competitive programming contests, where users
+                            can submit code that executes securely in sandboxed environments, runs against test cases,
+                            and receives automated grading</p>
+                        <p class="meta small"><strong>Stack:</strong> Django, React, SQLite, Seccomp, Nginx, Gunicorn,
+                            GCP</p>
                     </div>
                 </div>
             </div>
