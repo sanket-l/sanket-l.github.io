@@ -227,12 +227,52 @@
                 <h3>Experience</h3>
                 <div class="timeline">
                     <article class="timeline-item">
+                        <h4>Viant Technology — Cloud Reliability Engineer Intern</h4>
+                        <p class="muted">Jul 2022 – Sep 2025</p>
+                        <ul>
+                            <li>Built a reusable pre-deployment validation framework in Python to catch
+                                missing, unreachable, or misconfigured runtime dependencies before services reached
+                                production, elimating the risk of deployment failures.</li>
+                            <li>Implemented 7+ typed dependency highly scalable probes covering AWS S3, IAM, Vault
+                                secrets,
+                                HTTP/TCP endpoints, environment variables, local files, and EC2 Instance Metadata
+                                Service, replacing scattered service-specific validation with a common framework.</li>
+                            <li>Integrated dependency checks into CI/CD as a deployment gate, classifying
+                                validation results as blocking, warning, or informational outcomes so deployment
+                                workflows could identify dependency issues before application rollout.</li>
+                            <li>Designed an AI-assisted dependency review workflow to
+                                identify dependency-impacting source changes, update manifests, and
+                                generate reviewable pull requests for service-owner approval.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item">
                         <h4>Platform9 Systems (India) — DevOps Engineer</h4>
                         <p class="muted">Jul 2022 – Sep 2025</p>
                         <ul>
                             <li>Led on-call production operations one week each month, ensuring 99.99%
                                 uptime across multi-cloud environments by responding to critical paging
                                 alerts and mitigating high-impact incidents within SLA targets.</li>
+                            <li>Introduced automated chaos engineering experiments (Chaos Mesh) on staging
+                                environments, exposing 5 critical latent failure modes and improving SLA compliance by
+                                15% ahead of peak traffic windows</li>
+                            <li>Spearheaded a migration from manual infrastructure updates to a GitOps model using
+                                ArgoCD and Crossplane, automating 95% of deployment processes and cutting change-failure
+                                rates from 4.2% to under 0.5%.</li>
+                            <li>Engineered custom Go scripts triggered by Prometheus alert webhooks, automating
+                                disk-full and pod-crash loop remediation to reduce MTTR by 60%.</li>
+                            <li>Engineered an automated FinOps framework using OpenCost and custom Go scripts to analyze
+                                Kubernetes resource utilization; reduced annual multi-cloud infrastructure spend by
+                                $140,000 without triggering a single performance degradation.</li>
+                            <li>Spearheaded a migration from legacy deployment methods to a centralized ArgoCD GitOps
+                                workflow across 50 production clusters; reduced configuration drift incidents by 85% and
+                                accelerated deployment frequency by 4x.</li>
+                            <li>Designed and executed a comprehensive Kubernetes Disaster Recovery strategy using Velero
+                                across 40+ production clusters; established automated snapshotting of Persistent Volumes
+                                using CSI plugins, reducing Recovery Time Objective (RTO) by 75% (from hours to under 15
+                                minutes).</li>
+                            <li>Reduced CI infrastructure spend by 40% as measured by a 65% drop in idle capacity and a
+                                4-minute reduction in average queue times, by architecting an EKS-based runner platform
+                                with Karpenter and workload-aware node pools.</li>
                             <li>Upgraded the production Aurora MySQL database cluster from v5.7 → v8.0
                                 with zero downtime, orchestrating phased failovers and replica validation to maintain
                                 uninterrupted customer workloads.</li>
@@ -322,30 +362,101 @@
                 <h3>Selected Projects</h3>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h4>Container Health Monitoring</h4>
-                        <p>Built a scalable monitoring pipeline using Prometheus, Grafana, Kafka & ELK to monitor
-                            container health and alert on anomalies</p>
-                        <p class="meta small"><strong>Stack:</strong> TeamCity, Prometheus, Kafka, ELK</p>
+                        <h4>GPU-Accelerated LLM Inference Platform</h4>
+                        <p> Built a Kubernetes-native GPU inference platform for serving large language
+                            models with vLLM and llm-d, using disaggregated
+                            prefill/decode architecture to improve GPU utilization and inference throughput. Configured
+                            GPU-aware workload scheduling and autoscaling with Dynamic Resource Allocation
+                            (DRA), enabling workloads to request and efficiently share appropriate GPU
+                            resources based on inference requirements. Added Prometheus-based observability for GPU
+                            utilization, request latency, throughput, and KV-cache behavior to continuously tune
+                            inference performance. </p>
+                        <p class="meta small"><strong>Stack:</strong> Kubernetes, NVIDIA GPUs, vLLM, llm-d, DRA, Python,
+                            Prometheus, Grafana, Helm</p>
                     </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4>Universal Utility Agent — Agentic Orchestration Platform</h4>
+                            <p> Architected a serverless multi-agent orchestration platform that dynamically discovers
+                                and
+                                executes specialized agents, eliminating hardcoded workflows and enabling extensible
+                                task
+                                execution. Built an LLM-powered planner with Azure OpenAI to decompose complex tasks,
+                                determine execution order, manage agent handoffs, and coordinate end-to-end execution
+                                with
+                                traceability. Designed a Cosmos DB-backed registry and memory layer to persist agent
+                                capabilities, workflow state, and execution traces for reliable state management and
+                                observability. </p>
+                            <p class="meta small"><strong>Stack:</strong> Python, Azure Functions, Azure OpenAI, Cosmos
+                                DB,
+                                Serverless Architecture</p>
+                        </div>
+                        <div class="project-card">
+                            <h4>Talk-To-Podcast</h4>
+                            <p> Built a RAG-powered chat platform that lets users interact with entire podcast episodes
+                                through semantic search, surfacing notable quotes, summaries, and business insights.
+                                Processed <strong>500+ episodes (560+ hours)</strong> through a LangGraph pipeline for
+                                transcription, analysis, and persistence, and structured expert commentary into
+                                actionable
+                                business plans with market analysis and implementation steps. Implemented vector-based
+                                retrieval with PostgreSQL and pgvector, with Langfuse for LLM observability and cost
+                                optimization. </p>
+                            <p class="meta small"><strong>Stack:</strong> React, FastAPI, LangGraph, Supabase,
+                                PostgreSQL,
+                                pgvector, YouTube API, OpenRouter, Langfuse, Coolify</p>
+                        </div>
+                        <div class="project-card">
+                            <h4>Automated Kubernetes Fleet Upgrades &amp; Canary Operator</h4>
+                            <p> Built a custom Kubernetes operator in Go using Kubebuilder to automate blue-green node
+                                pool
+                                upgrades across 30+ AWS EKS clusters, replacing manual upgrade orchestration with a
+                                controlled, repeatable workflow. Integrated Argo Rollouts and Prometheus metrics to
+                                continuously evaluate upgrade health and automatically pause or roll back deployments
+                                when
+                                predefined reliability thresholds are exceeded. </p>
+                            <p class="meta small"><strong>Stack:</strong> Go, Kubebuilder, Kubernetes, AWS EKS, Argo
+                                Rollouts, Prometheus</p>
+                        </div>
+                        <div class="project-card">
+                            <h4>Enterprise Zero-Trust Service Mesh &amp; Microsegmentation Platform</h4>
+                            <p> Designed a zero-trust service-to-service security architecture using Istio and Envoy to
+                                enforce identity-aware traffic policies across microservices. Automated infrastructure
+                                provisioning with Terraform and integrated Open Policy Agent (OPA) to enforce
+                                fine-grained
+                                authorization policies and mutual TLS (mTLS), creating a consistent security boundary
+                                between services. </p>
+                            <p class="meta small"><strong>Stack:</strong> Istio, Envoy, Terraform, OPA, AWS, Kubernetes,
+                                mTLS</p>
+                        </div>
+                        <div class="project-card">
+                            <h4>Container Health Monitoring</h4>
+                            <p>Built a scalable monitoring pipeline using Prometheus, Grafana, Kafka & ELK to monitor
+                                container health and alert on anomalies</p>
+                            <p class="meta small"><strong>Stack:</strong> TeamCity, Prometheus, Kafka, ELK</p>
+                        </div>
 
-                    <div class="project-card">
-                        <h4>LIGHT IT UP! — Zigbee Street Lighting</h4>
-                        <p>Implemented a Zigbee mesh with Raspberry Pi controllers and a React dashboard for automated
-                            street-light control and scheduling</p>
-                        <p class="meta small"><strong>Stack:</strong> React, Django, Astral, Xbee, Nginx, Gunicorn,
-                            Apache Kafka, Raspberry Pi</p>
-                    </div>
+                        <div class="project-card">
+                            <h4>LIGHT IT UP! — Zigbee Street Lighting</h4>
+                            <p>Implemented a Zigbee mesh with Raspberry Pi controllers and a React dashboard for
+                                automated
+                                street-light control and scheduling</p>
+                            <p class="meta small"><strong>Stack:</strong> React, Django, Astral, Xbee, Nginx, Gunicorn,
+                                Apache Kafka, Raspberry Pi</p>
+                        </div>
 
-                    <div class="project-card">
-                        <h4>CTD-NCC — Competitive Coding Platform</h4>
-                        <p>Developed a full-stack platform for conducting competitive programming contests, where users
-                            can submit code that executes securely in sandboxed environments, runs against test cases,
-                            and receives automated grading</p>
-                        <p class="meta small"><strong>Stack:</strong> Django, React, SQLite, Seccomp, Nginx, Gunicorn,
-                            GCP</p>
+                        <div class="project-card">
+                            <h4>CTD-NCC — Competitive Coding Platform</h4>
+                            <p>Developed a full-stack platform for conducting competitive programming contests, where
+                                users
+                                can submit code that executes securely in sandboxed environments, runs against test
+                                cases,
+                                and receives automated grading</p>
+                            <p class="meta small"><strong>Stack:</strong> Django, React, SQLite, Seccomp, Nginx,
+                                Gunicorn,
+                                GCP</p>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section id="education" class="section education-section">
