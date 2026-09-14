@@ -374,89 +374,88 @@
                         <p class="meta small"><strong>Stack:</strong> Kubernetes, NVIDIA GPUs, vLLM, llm-d, DRA, Python,
                             Prometheus, Grafana, Helm</p>
                     </div>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <h4>Universal Utility Agent — Agentic Orchestration Platform</h4>
-                            <p> Architected a serverless multi-agent orchestration platform that dynamically discovers
-                                and
-                                executes specialized agents, eliminating hardcoded workflows and enabling extensible
-                                task
-                                execution. Built an LLM-powered planner with Azure OpenAI to decompose complex tasks,
-                                determine execution order, manage agent handoffs, and coordinate end-to-end execution
-                                with
-                                traceability. Designed a Cosmos DB-backed registry and memory layer to persist agent
-                                capabilities, workflow state, and execution traces for reliable state management and
-                                observability. </p>
-                            <p class="meta small"><strong>Stack:</strong> Python, Azure Functions, Azure OpenAI, Cosmos
-                                DB,
-                                Serverless Architecture</p>
-                        </div>
-                        <div class="project-card">
-                            <h4>Talk-To-Podcast</h4>
-                            <p> Built a RAG-powered chat platform that lets users interact with entire podcast episodes
-                                through semantic search, surfacing notable quotes, summaries, and business insights.
-                                Processed <strong>500+ episodes (560+ hours)</strong> through a LangGraph pipeline for
-                                transcription, analysis, and persistence, and structured expert commentary into
-                                actionable
-                                business plans with market analysis and implementation steps. Implemented vector-based
-                                retrieval with PostgreSQL and pgvector, with Langfuse for LLM observability and cost
-                                optimization. </p>
-                            <p class="meta small"><strong>Stack:</strong> React, FastAPI, LangGraph, Supabase,
-                                PostgreSQL,
-                                pgvector, YouTube API, OpenRouter, Langfuse, Coolify</p>
-                        </div>
-                        <div class="project-card">
-                            <h4>Automated Kubernetes Fleet Upgrades &amp; Canary Operator</h4>
-                            <p> Built a custom Kubernetes operator in Go using Kubebuilder to automate blue-green node
-                                pool
-                                upgrades across 30+ AWS EKS clusters, replacing manual upgrade orchestration with a
-                                controlled, repeatable workflow. Integrated Argo Rollouts and Prometheus metrics to
-                                continuously evaluate upgrade health and automatically pause or roll back deployments
-                                when
-                                predefined reliability thresholds are exceeded. </p>
-                            <p class="meta small"><strong>Stack:</strong> Go, Kubebuilder, Kubernetes, AWS EKS, Argo
-                                Rollouts, Prometheus</p>
-                        </div>
-                        <div class="project-card">
-                            <h4>Enterprise Zero-Trust Service Mesh &amp; Microsegmentation Platform</h4>
-                            <p> Designed a zero-trust service-to-service security architecture using Istio and Envoy to
-                                enforce identity-aware traffic policies across microservices. Automated infrastructure
-                                provisioning with Terraform and integrated Open Policy Agent (OPA) to enforce
-                                fine-grained
-                                authorization policies and mutual TLS (mTLS), creating a consistent security boundary
-                                between services. </p>
-                            <p class="meta small"><strong>Stack:</strong> Istio, Envoy, Terraform, OPA, AWS, Kubernetes,
-                                mTLS</p>
-                        </div>
-                        <div class="project-card">
-                            <h4>Container Health Monitoring</h4>
-                            <p>Built a scalable monitoring pipeline using Prometheus, Grafana, Kafka & ELK to monitor
-                                container health and alert on anomalies</p>
-                            <p class="meta small"><strong>Stack:</strong> TeamCity, Prometheus, Kafka, ELK</p>
-                        </div>
+                    <div class="project-card">
+                        <h4>Universal Utility Agent — Agentic Orchestration Platform</h4>
+                        <p> Architected a serverless multi-agent orchestration platform that dynamically discovers
+                            and
+                            executes specialized agents, eliminating hardcoded workflows and enabling extensible
+                            task
+                            execution. Built an LLM-powered planner with Azure OpenAI to decompose complex tasks,
+                            determine execution order, manage agent handoffs, and coordinate end-to-end execution
+                            with
+                            traceability. Designed a Cosmos DB-backed registry and memory layer to persist agent
+                            capabilities, workflow state, and execution traces for reliable state management and
+                            observability. </p>
+                        <p class="meta small"><strong>Stack:</strong> Python, Azure Functions, Azure OpenAI, Cosmos
+                            DB,
+                            Serverless Architecture</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Talk-To-Podcast</h4>
+                        <p> Built a RAG-powered chat platform that lets users interact with entire podcast episodes
+                            through semantic search, surfacing notable quotes, summaries, and business insights.
+                            Processed <strong>500+ episodes (560+ hours)</strong> through a LangGraph pipeline for
+                            transcription, analysis, and persistence, and structured expert commentary into
+                            actionable
+                            business plans with market analysis and implementation steps. Implemented vector-based
+                            retrieval with PostgreSQL and pgvector, with Langfuse for LLM observability and cost
+                            optimization. </p>
+                        <p class="meta small"><strong>Stack:</strong> React, FastAPI, LangGraph, Supabase,
+                            PostgreSQL,
+                            pgvector, YouTube API, OpenRouter, Langfuse, Coolify</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Automated Kubernetes Fleet Upgrades &amp; Canary Operator</h4>
+                        <p> Built a custom Kubernetes operator in Go using Kubebuilder to automate blue-green node
+                            pool
+                            upgrades across 30+ AWS EKS clusters, replacing manual upgrade orchestration with a
+                            controlled, repeatable workflow. Integrated Argo Rollouts and Prometheus metrics to
+                            continuously evaluate upgrade health and automatically pause or roll back deployments
+                            when
+                            predefined reliability thresholds are exceeded. </p>
+                        <p class="meta small"><strong>Stack:</strong> Go, Kubebuilder, Kubernetes, AWS EKS, Argo
+                            Rollouts, Prometheus</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Enterprise Zero-Trust Service Mesh &amp; Microsegmentation Platform</h4>
+                        <p> Designed a zero-trust service-to-service security architecture using Istio and Envoy to
+                            enforce identity-aware traffic policies across microservices. Automated infrastructure
+                            provisioning with Terraform and integrated Open Policy Agent (OPA) to enforce
+                            fine-grained
+                            authorization policies and mutual TLS (mTLS), creating a consistent security boundary
+                            between services. </p>
+                        <p class="meta small"><strong>Stack:</strong> Istio, Envoy, Terraform, OPA, AWS, Kubernetes,
+                            mTLS</p>
+                    </div>
+                    <div class="project-card">
+                        <h4>Container Health Monitoring</h4>
+                        <p>Built a scalable monitoring pipeline using Prometheus, Grafana, Kafka & ELK to monitor
+                            container health and alert on anomalies</p>
+                        <p class="meta small"><strong>Stack:</strong> TeamCity, Prometheus, Kafka, ELK</p>
+                    </div>
 
-                        <div class="project-card">
-                            <h4>LIGHT IT UP! — Zigbee Street Lighting</h4>
-                            <p>Implemented a Zigbee mesh with Raspberry Pi controllers and a React dashboard for
-                                automated
-                                street-light control and scheduling</p>
-                            <p class="meta small"><strong>Stack:</strong> React, Django, Astral, Xbee, Nginx, Gunicorn,
-                                Apache Kafka, Raspberry Pi</p>
-                        </div>
+                    <div class="project-card">
+                        <h4>LIGHT IT UP! — Zigbee Street Lighting</h4>
+                        <p>Implemented a Zigbee mesh with Raspberry Pi controllers and a React dashboard for
+                            automated
+                            street-light control and scheduling</p>
+                        <p class="meta small"><strong>Stack:</strong> React, Django, Astral, Xbee, Nginx, Gunicorn,
+                            Apache Kafka, Raspberry Pi</p>
+                    </div>
 
-                        <div class="project-card">
-                            <h4>CTD-NCC — Competitive Coding Platform</h4>
-                            <p>Developed a full-stack platform for conducting competitive programming contests, where
-                                users
-                                can submit code that executes securely in sandboxed environments, runs against test
-                                cases,
-                                and receives automated grading</p>
-                            <p class="meta small"><strong>Stack:</strong> Django, React, SQLite, Seccomp, Nginx,
-                                Gunicorn,
-                                GCP</p>
-                        </div>
+                    <div class="project-card">
+                        <h4>CTD-NCC — Competitive Coding Platform</h4>
+                        <p>Developed a full-stack platform for conducting competitive programming contests, where
+                            users
+                            can submit code that executes securely in sandboxed environments, runs against test
+                            cases,
+                            and receives automated grading</p>
+                        <p class="meta small"><strong>Stack:</strong> Django, React, SQLite, Seccomp, Nginx,
+                            Gunicorn,
+                            GCP</p>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section id="education" class="section education-section">
